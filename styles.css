@@ -15,12 +15,16 @@ h1 {
 }
 
 .btn-custom {
-    background-color: #4F46E5; /* Color azul */
+    background-color: #000; /* Color negro */
+    color: #fff; /* Color de texto blanco */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Añadir transiciones */
+    padding: 0.5rem 1rem; /* Espaciado */
+    border-radius: 0.375rem; /* Bordes redondeados */
+    border: none; /* Sin borde */
 }
 
 .btn-custom:hover {
-    background-color: #3B82F6; /* Color más claro al pasar el ratón */
+    background-color: #333; /* Color gris oscuro al pasar el ratón */
     transform: scale(1.05); /* Escalar ligeramente al pasar el ratón */
 }
 
