@@ -51,3 +51,48 @@ h1 {
 .max-h-64 {
     max-height: 16rem; /* Ajusta la altura según necesites */
 }
+
+/* Estilos para el contenedor de la tabla */
+.table-container {
+    max-height: 300px; /* Ajusta la altura según sea necesario */
+    overflow-y: auto; /* Habilita el scroll */
+    border: 1px solid #d1d5db; /* Borde para el contenedor */
+}
+
+/* Estilos para la tabla */
+.table-fixed th {
+    position: sticky; /* Mantener el encabezado fijo */
+    top: 0; /* Fija el encabezado en la parte superior */
+    background-color: white; /* Fondo blanco para el encabezado */
+    z-index: 10; /* Asegura que el encabezado esté encima del resto */
+}
+
+
+@media (max-width: 768px) {
+    .table-container {
+        max-height: 250px; /* Altura máxima para dispositivos móviles */
+        overflow-y: auto; /* Scroll en el eje y */
+    }
+
+    .table th, .table td {
+        padding: 8px; /* Reducir padding en dispositivos móviles */
+        font-size: 0.875rem; /* Tamaño de fuente más pequeño */
+    }
+
+    .btn-custom {
+        padding: 1rem; /* Aumentar padding en botones para mejor tacto */
+    }
+}
+
+/* Estilo para la sección de total del precio */
+.total-container {
+    background-color: #4F46E5; /* Fondo azul oscuro */
+    color: white; /* Texto blanco */
+    padding: 1rem; /* Espaciado interno */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    margin-top: 1rem; /* Espacio superior */
+}
+
+.total-container h3 {
+    margin: 0.5rem 0; /* Espaciado entre los elementos */
+}
